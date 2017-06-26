@@ -5,11 +5,9 @@ var fs = require('fs');
 // require path for getting the models path
 var path = require('path');
 // connect to mongoose!
-if(process.env.NODE_ENV == "production"){
-  mongoose.connect(process.env.MONGOLAB_URL);
-}else{
-  mongoose.connect('mongodb://localhost/team_manager');
-}
+
+  mongoose.connect(process.env.MONGOLAB_URL || 'mongodb://localhost/team_manager');
+
 
 // create a variable that points to the path where all of the models live
 var models_path = path.join(__dirname, './../models');
