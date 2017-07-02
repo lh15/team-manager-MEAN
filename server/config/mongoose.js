@@ -6,7 +6,7 @@ var fs = require('fs');
 var path = require('path');
 // connect to mongoose!
 
-  mongoose.connect(process.env.MONGOLAB_URL || 'mongodb://localhost/team_manager');
+  mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/team_manager');
 
 
 // create a variable that points to the path where all of the models live

@@ -15,10 +15,10 @@ Manage Players:
 Manage Player Status:
     ✔ localhost/status @done (6/19/2017, 5:42:40 PM)
     Players Status:
-        ✔ game one should be default @done (6/19/2017, 5:43:32 PM)
+        ✔ game one should be default @done (6/26/2017, 10:36:08 AM)
         ✔ table ng-reapet all players with player name, and current satus lit @done (6/19/2017, 5:43:31 PM)
         ✔ default status should be undecided as yellow @done (6/19/2017, 5:43:27 PM)
-        ✔ clicking playing shoul dmake it green @done (6/19/2017, 5:43:25 PM)
+        ✔ clicking playing shoul dmake it green @done (6/26/2017, 10:36:42 AM)
         ✔ clicking not playing shoul dmake it red @done (6/19/2017, 5:43:24 PM)
         ✔ clicking undecided shoul dmake it yellow @done (6/19/2017, 5:43:23 PM)
 Models:

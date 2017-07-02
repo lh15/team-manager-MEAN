@@ -24,9 +24,11 @@ var routes_setter = require('./server/config/routes.js');
 routes_setter(app);
 // *************End Routes**************
 
-// Setting our Server to Listen on Port: 7000
-app.set("port", process.env.PORT || 7000);
+// // Setting our Server to Listen on Port: 7000
+// app.set("port", process.env.PORT || 7000);
 
-app.listen(app.get("port"), function(){
-  console.log("It's aliiive!");
-});
+// app.listen(app.get("port"), function(){
+//   console.log("It's aliiive!");
+// });
+
+app.listen(process.env.PORT || 7000);
