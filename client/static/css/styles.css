@@ -1,25 +1,25 @@
- * {
+   * {
      font-family: sans-serif;
- }
- a,a:link,a:visited,a:hover,a:focus,a:active{
-    color: inherit;
-    text-decoration: none;
-}
- body {
+   }
+   
+   a, a:link, a:visited, a:hover, a:focus, a:active {
+     color: inherit;
+     text-decoration: none;
+   }
+   
+   body {
      background: lightgray;
      color: darkblue;
      text-align: center;
- }
- 
-
- 
- #container {
+   }
+   
+   #container {
      width: 80%;
      margin: 0px auto;
      text-align: center;
- }
- 
- .partial {
+   }
+   
+   .partial {
      margin: 0px auto;
      text-align: center;
      background: lightsteelblue;
@@ -27,65 +27,116 @@
      border-radius: 30px;
      padding: 30px;
      margin: 20px;
- }
- 
- #add_player {
+   }
+   
+   #add_player {
      font-size: 1.5em;
- }
- 
- #add_player input {
+   }
+   
+   #add_player input {
      font-size: 1.1em;
- }
- 
- a {
+     width: 100%;
+     margin-bottom: 10px;
+   }
+   
+   a {
      font-size: 150%;
      border-radius: 10px;
      padding: 10px;
- }
- 
- a.selected {
+   }
+   
+   a.selected {
      background: lightslategray;
      border-radius: 10px;
      padding: 10px;
      border: 2px solid darkblue;
- }
- 
- .undecided.selected {
+   }
+   
+   .undecided.selected {
      background: yellow;
      color: black
- }
- 
- .playing.selected {
+   }
+   
+   .playing.selected {
      background: green;
      color: white
- }
- 
- .not_playing.selected {
+   }
+   
+   .not_playing.selected {
      background: red;
      color: white
- }
- 
- button {
+   }
+   
+   button {
      font-size: 120%
- }
- 
- table {
+   }
+   
+   table {
      font-family: arial, sans-serif;
      border-collapse: collapse;
      margin: 0px auto;
      font-size: 130%
- }
- 
- td, th {
+   }
+   
+   td, th {
      border: 1px solid #dddddd;
      text-align: left;
      padding: 8px;
- }
- 
- tr:nth-child(even) {
+   }
+   
+   tr:nth-child(even) {
      background-color: #dddddd;
- }
- 
- input {
+   }
+   
+   input {
      background: transparent
- }
+   }
+   
+   @media only screen and (max-width: 480px) {
+     #container {
+       text-align: center;
+       margin-top: 5px;
+       font-weight: 700;
+       width: 100%
+     }
+     table button {
+       background: white;
+     }
+     #status {
+       font-family: arial, sans-serif;
+       border-collapse: collapse;
+       margin: 20px auto;
+       width: 100%;
+       font-size: 100%;
+     }
+     #list {
+       font-family: arial, sans-serif;
+       border-collapse: collapse;
+       margin: 20px auto;
+       width: 100%;
+       font-size: 100%;
+     }
+     .partial {
+       margin: 0px auto;
+       text-align: center;
+       background: lightsteelblue;
+       border: 5px solid lightslategray;
+       border-radius: 30px;
+       padding: 19px;
+       margin: 10px;
+     }
+     button {
+       font-size: 73%;
+     }
+     a {
+       font-size: 95%;
+       border-radius: 10px;
+       padding: 4px;
+     }
+     a.selected {
+       background: lightslategray;
+       border-radius: 10px;
+       padding: 5px;
+       border: 2px solid darkblue;
+     }
+   }
